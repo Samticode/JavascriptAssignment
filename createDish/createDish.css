@@ -1,0 +1,155 @@
+/*----Default CSS-----*/
+*{
+    margin: 0;
+    padding: 0;
+    transition: cubic-bezier(0.19, 1, 0.22, 1) 500ms;
+}
+body {
+    background-color: rgb(5, 11, 25);
+    overflow-x: hidden;
+}
+input{
+    height: 50px;
+    width: 300px;
+    font-size: 2rem;
+    font-family: 'Roboto Mono', monospace;
+    color: rgb(63, 71, 57);
+}
+.none {
+    display: none;
+}
+
+/*----Start CSS-----*/
+.startDisp{
+    z-index: 10;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+}
+#viewBTN, #startBTN{
+    display: inline-block;
+
+    color: rgb(5, 11, 25);
+    background-color: white;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 2rem;
+
+    padding: 3em 4em;
+    border-radius: 70px 10px;
+}
+#startBTN:hover, #viewBTN:hover{
+    transform: scale(1.04);
+}
+#startBTN:active, #viewBTN:active{
+    transform: scale(0.96);
+}
+
+/*----Inputs CSS-----*/
+.dishName{
+    height: 30vh;
+    width: 100vw;
+
+    display: grid;
+    place-items: center;
+    animation: upToDown 2000ms;
+}
+.inputDisp{
+    height: 70vh;
+    width: 100vw;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+}
+
+.text{
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 3rem;
+}
+
+.mainDish, .sideDish, .drink, .dessert{
+    width: 500px;
+}
+
+.mainDish, .drink{
+    animation: leftToRight 2000ms;
+}
+.sideDish, .dessert{
+    animation: rightToLeft 2000ms;
+}
+
+/*-----Add to array CSS------*/
+.unShiftDiv{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+
+    top: 0;
+    left: 0;
+}
+.unShift{
+    color: rgb(5, 11, 25);
+    background-color: white;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 2rem;
+
+    padding: 3em 4em;
+    border-radius: 70px 10px;
+}
+.unShift:hover{
+    transform: scale(1.04);
+}
+.unShift:active{
+    transform: scale(0.96);
+}
+
+/*----View CSS-----*/
+.viewDisp{
+    height: 100vh;
+    width: 100vw;
+
+    display: grid;
+    place-items: center;
+}
+.foodName{
+    color: white;
+    font-family: 'ROBOTO MONO', monospace;
+    font-size: 4rem;
+}
+li{
+    color: white;
+    margin: 40px 0;
+    font-size: 2rem;
+}
+
+
+/*----Animation CSS-----*/
+@keyframes leftToRight{
+    0%{
+        transform: translateX(-120%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+@keyframes rightToLeft{
+    0%{
+        transform: translateX(150%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+@keyframes upToDown{
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}

@@ -1,0 +1,115 @@
+/*----Default CSS-----*/
+*{
+    padding: 0;
+    margin: 0;
+    transition: ease 500ms;
+}
+.none{
+    display: none;
+}
+a{
+    color: blueviolet;
+}
+body{
+    overflow-x: hidden;
+}
+/*--Indicator to scroll down CSS--*/
+.look{
+    position: absolute;
+    font-size: 5rem;
+    top: 85%;
+    left: 4%;
+}
+
+/*----Style for the years info CSS-----*/
+.one{
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+}
+.two{
+    margin-top: 2em;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+}
+.three{
+    margin-top: 2em;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+}
+
+/*----MainDisp CSS-----*/
+.mainDisp{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(45, 38, 49);
+
+    display: grid;
+    place-items: center;
+}
+
+.ask{
+    font-size: 4rem;
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+}
+
+/*----infoDisp CSS-----*/
+.infoCSS{
+    border-top: solid 1px white;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(45, 38, 49);
+
+    display: grid;
+    place-items: center;
+}
+
+/*----Music CSS-----*/
+.pinkCSS{
+    border-top: solid 1px white;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(45, 38, 49);
+
+    display: grid;
+    place-items: center;
+}
+
+/*----Game CSS-----*/
+.gameCSS{
+    border-top: solid 1px white;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(45, 38, 49);
+
+    display: grid;
+    place-items: center;
+}
+
+/*----Future CSS-----*/
+.futureCSS{
+    border-top: solid 1px white;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(45, 38, 49);
+
+    display: grid;
+    place-items: center;
+}
+
+/*----Error CSS-----*/
+.nothingCSS{
+    border-top: solid 1px white;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(45, 38, 49);
+
+    display: grid;
+    place-items: center;
+}

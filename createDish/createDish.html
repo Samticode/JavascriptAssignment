@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lag din egen matrett</title>
+    <link rel="stylesheet" href="createDish.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--Start screen with two buttons-->
+    <div class="startDisp" id="startDisp">
+        <p id="startBTN">Klar?</p>
+        <!--<p id="viewBTN">Se?</p>-->
+    </div>
+    <!--Local storage-->
+    <div class="none" id="viewDisp">
+        <div>
+            <h2 class="foodName" id="foodName">Matrettnavn</h2>
+            <ul class="list" id="firstList"></ul>
+        </div>
+    </div>
+    <!--Input screen-->
+        <div class="none" id="nameDiv">
+            <div>
+                <h1 class="text nameText">Hva heter retten?</h1>
+                <input type="text" name="Hovedrett" id="nameDish">  
+            </div>
+        </div>
+        <div class="none" id="inputDiv">
+            <div class="mainDish">
+                <h1 class="text mainText">Hovedretten din</h1>
+                <input type="text" name="Hovedrett" id="mainDish">
+            </div>
+            <div class="sideDish">
+                <h1 class="text sideText">Sideretten din</h1>
+                <input type="text" name="Siderett" id="sideDish">
+            </div>
+            <div class="drink">
+                <h1 class="text drinkText">Drikken din</h1>
+                <input type="text" name="Drikke" id="drinkDish"></div>
+            <div class="dessert">
+                <h1 class="text dessertText">Dessert til slutt</h1>
+                <input type="text" name="Dessert" id="dessertDish">
+            </div>
+        </div>
+
+    <!--Add items to local storage and show view screen-->
+    <div class="none" id="unShiftDiv">
+        <p class="unShift" id="unShift">Lag matretten</p>
+    </div>
+</body>
+<script src="createDish.js"></script>
+</html>
